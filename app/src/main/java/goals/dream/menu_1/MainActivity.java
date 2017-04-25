@@ -8,9 +8,14 @@ import android.support.v7.widget.Toolbar;
 import android.view.View;
 import android.view.Menu;
 import android.view.MenuItem;
+import android.widget.ImageView;
+import android.widget.TextView;
 import android.widget.Toast;
 
+
+
 public class MainActivity extends AppCompatActivity {
+
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -18,6 +23,10 @@ public class MainActivity extends AppCompatActivity {
         setContentView(R.layout.activity_main);
         Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
         setSupportActionBar(toolbar);
+
+        //View snackbarView = Snackbar.getView();
+        //TextView textView = (TextView) snackbarView.findViewById(android.support.design.R.id.snackbar_text);
+        //textView.setMaxLines(5);  // show multiple line
 
 // could cause error ??
         getSupportActionBar().setTitle("Your title");
@@ -27,9 +36,17 @@ public class MainActivity extends AppCompatActivity {
         fab.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Snackbar.make(view, "Replace with your own action", Snackbar.LENGTH_LONG)
+                String string_hold_it =
+                        "Line 1\n" +
+                            "Line 2\n" +
+                            "Line 3\n" +
+                            "line 4";
+                Snackbar.make(view, string_hold_it, Snackbar.LENGTH_INDEFINITE)
                         .setAction("Action", null).show();
+
+                //Toast.makeText(getApplicationContext(), "snack button clicked", Toast.LENGTH_SHORT).show();
             }
+
         });
     }
 
@@ -64,28 +81,28 @@ public class MainActivity extends AppCompatActivity {
         }
 
  //menu
-        if (id == R.id.menu_1) {
-            Toast.makeText(this, "menu_1", Toast.LENGTH_SHORT).show();
-            //
-        }
-        if (id == R.id.menu_2) {
-            Toast.makeText(this, "menu_2", Toast.LENGTH_SHORT).show();
-            //
-        }
-        if (id == R.id.menu_3) {
-            Toast.makeText(this, "menu_3", Toast.LENGTH_SHORT).show();
-            //
-        }
-        if (id == R.id.menu_4) {
-            Toast.makeText(this, "menu_4", Toast.LENGTH_SHORT).show();
-            //
-        }
-        if (id == R.id.menu_5) {
-            Toast.makeText(this, "menu_5", Toast.LENGTH_SHORT).show();
-            //
-        }
-        return super.onOptionsItemSelected(item);
+    if (id == R.id.menu_1) {
+    Toast.makeText(this, "menu_1", Toast.LENGTH_SHORT).show();
+    //
     }
+    if (id == R.id.menu_2) {
+        Toast.makeText(this, "menu_2", Toast.LENGTH_SHORT).show();
+        //
+    }
+    if (id == R.id.menu_3) {
+        Toast.makeText(this, "menu_3", Toast.LENGTH_SHORT).show();
+        //
+    }
+    if (id == R.id.menu_4) {
+        Toast.makeText(this, "menu_4", Toast.LENGTH_SHORT).show();
+        //
+    }
+    if (id == R.id.menu_5) {
+        Toast.makeText(this, "menu_5", Toast.LENGTH_SHORT).show();
+        //
+    }
+    return super.onOptionsItemSelected(item);
+}
 
     //button clicks------------------------------------------------------------------
     public void buttonOnClick(View view) {
@@ -99,6 +116,16 @@ public class MainActivity extends AppCompatActivity {
         if (the_id == R.id.b_3) {
             Toast.makeText(this, "but_3_works", Toast.LENGTH_SHORT).show();
         }
+        //image click
+//        if (the_id == image_1) {
+//            Toast.makeText(this, "but_3_works", Toast.LENGTH_SHORT).show();
+//            ImageView imgView = (ImageView)findViewById(R.id.image_1);
+//            //imgView .setVisibility(View.VISIBLE);
+//            //imgView .setVisibility(View.INVISIBLE);
+//            imgView .setVisibility(View.GONE);
+//            //control shift slash
+//        }
+
     }
 
 

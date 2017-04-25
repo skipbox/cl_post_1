@@ -23,7 +23,7 @@
         android:title="" />
     <item
         android:id="@+id/icon_4"
-        android:icon="@android:drawable/ic_input_add"
+        android:icon="@android:drawable/ic_btn_speak_now"
         android:orderInCategory="100"
         app:showAsAction="always"
         android:title="" />
