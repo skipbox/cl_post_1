@@ -56,6 +56,13 @@ public class MainActivity extends AppCompatActivity {
         if (id == R.id.icon_3) {
             Toast.makeText(this, "icon_3", Toast.LENGTH_SHORT).show();
         }
+        if (id == R.id.icon_4) {
+            Toast.makeText(this, "icon_4", Toast.LENGTH_SHORT).show();
+        }
+        if (id == R.id.icon_5) {
+            Toast.makeText(this, "icon_5", Toast.LENGTH_SHORT).show();
+        }
+
  //menu
         if (id == R.id.menu_1) {
             Toast.makeText(this, "menu_1", Toast.LENGTH_SHORT).show();
