@@ -5,18 +5,30 @@
 
     <item
         android:id="@+id/icon_1"
-        android:icon="@drawable/ic_happy"
+        android:icon="@drawable/ic_cloud"
         android:orderInCategory="100"
         app:showAsAction="always"
         android:title="" />
     <item
         android:id="@+id/icon_2"
-        android:icon="@drawable/ic_happy"
+        android:icon="@drawable/icon_craig_125"
         android:orderInCategory="100"
         app:showAsAction="always"
         android:title="" />
     <item
         android:id="@+id/icon_3"
+        android:icon="@drawable/power_icon"
+        android:orderInCategory="100"
+        app:showAsAction="always"
+        android:title="" />
+    <item
+        android:id="@+id/icon_4"
+        android:icon="@android:drawable/ic_input_add"
+        android:orderInCategory="100"
+        app:showAsAction="always"
+        android:title="" />
+    <item
+        android:id="@+id/icon_5"
         android:icon="@drawable/ic_happy"
         android:orderInCategory="100"
         app:showAsAction="always"
